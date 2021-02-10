@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+group 'it.univr'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'net.sourceforge.jwebunit', name: 'jwebunit-core', version: '3.3'
+    testCompile group: 'net.sourceforge.jwebunit', name: 'jwebunit-htmlunit-plugin', version: '3.3'
+    testCompile group: 'org.slf4j', name: 'slf4j-nop', version: '1.7.21'
+    testCompile 'org.jsoup:jsoup:1.13.1'
+
+
+}
